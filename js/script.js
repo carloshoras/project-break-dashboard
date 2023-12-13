@@ -6,6 +6,7 @@ function pintaHoraFecha () {
     watch.innerHTML = `
     <p class="time">${fecha.getHours().toString().padStart(2,'0')}:${fecha.getMinutes().toString().padStart(2,'0')}:${fecha.getSeconds().toString().padStart(2,'0')}</p>
     <p class="date">${fecha.getDate().toString().padStart(2,'0')}/${(fecha.getMonth()+1).toString().padStart(2,'0')}/${fecha.getFullYear()}</p>`
+    // if nombre de documento es index.html y minuto == 1 --> Pinta frase
 }  
 
 pintaHoraFecha()
@@ -60,19 +61,43 @@ const nameUrl = document.querySelector(".nameUrl")
 const url = document.querySelector(".url")
 const savedLinks = document.querySelector(".savedLinks")
 
-buttonAddUrl.addEventListener('click', function () {
-    console.log(nameUrl)
-    if (localStorage.getItem(nameUrl.value)) {
-        alert("Ya existe una url guardada con este mismo nombre")
-    } else if (localStorage.getItem(nameUrl.value) === url.value) {
-        alert("Esta url ya esta guardada con otro nombre")
-    } else {
-        localStorage.setItem((nameUrl.value),url.value)
+paintLinks()
+
+function paintLinks () {
+    savedLinks.innerHTML = ""
+    const links = JSON.parse(localStorage.getItem("links"))
+    for (let linkName in links) {
         savedLinks.innerHTML += `
-        <div id="${nameUrl.value}">
+        <div id="${linkName}">
             <button>X</button>
-            <a href="${url.value}">${nameUrl.value}</a>
+            <a href="${links[linkName]}">${linkName}</a>
         </div>`
+    }
+    addCloseButtonEvent()
+}
+
+function addCloseButtonEvent () {
+    const closeButtons = document.querySelectorAll('.savedLinks button')
+    const linkCards = document.querySelectorAll('.savedLinks div')
+    const links = JSON.parse(localStorage.getItem("links"))
+    closeButtons.forEach(function (button, index) {
+        button.addEventListener('click', function() {
+            delete links[linkCards[index].id]
+            localStorage.setItem("links", JSON.stringify(links))
+            paintLinks()
+        })
+    })
+}
+
+buttonAddUrl.addEventListener('click', function () {
+    let links = JSON.parse(localStorage.getItem("links")) || {}
+    if (links[nameUrl.value]) {
+        alert("Ya existe una url guardada con este nombre")
+    } else {
+        links[nameUrl.value] = url.value
+        localStorage.setItem("links", JSON.stringify(links))
+        paintLinks()
+        addCloseButtonEvent()
     }
 })
 // -boton añadirenlace addeventlistener
