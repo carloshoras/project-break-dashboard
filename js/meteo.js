@@ -8,7 +8,7 @@ const forecastDay = document.querySelector(".forecastDay")
 fetchMeteo()
 function paintMeteo (meteoJson) {
     cityAndMeteo.innerHTML = `
-    <p>${meteoJson.location.name}/${meteoJson.location.country}</p>
+    <p>${meteoJson.location.name} / ${meteoJson.location.country}</p>
     <span>${meteoJson.current.condition.text}</span>`
     completeInfo.innerHTML = `
     <img src="${meteoJson.current.condition.icon}" alt="icon weather"/>
@@ -22,9 +22,11 @@ function paintMeteo (meteoJson) {
     `
     for (let i=0;i<24;i++) {
         forecastDay.innerHTML += `
-        <span>${meteoJson.forecast.forecastday[0].hour[i].time.split(" ")[1]}</span>
-        <img src="${meteoJson.forecast.forecastday[0].hour[i].condition.icon}" alt="icon weather" />
-        <span>${meteoJson.forecast.forecastday[0].hour[i].temp_c}°C</span>`
+        <div>
+            <span>${meteoJson.forecast.forecastday[0].hour[i].time.split(" ")[1]}</span>
+            <img src="${meteoJson.forecast.forecastday[0].hour[i].condition.icon}" alt="icon weather" />
+            <span>${meteoJson.forecast.forecastday[0].hour[i].temp_c} °C</span>
+        </div>`
     }
 }
 

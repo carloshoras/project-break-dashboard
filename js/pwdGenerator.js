@@ -36,5 +36,6 @@ buttonPassword.addEventListener('click', function () {
         <p>${password}</p>`
     } else {
         alert("Introduce un numero entre 12 y 50")
+        inputPassword.value = "12"
     }
 })
