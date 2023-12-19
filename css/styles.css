@@ -88,8 +88,8 @@ header a img {
     flex-wrap: wrap;
     align-items: center;
     padding: 40px;
-    gap: 50px;
-    max-height: 680px;
+    gap: 20px;
+    max-height: 90vh;
     /* border: 1px solid red; */
 }
 @media screen and (max-width: 900px) {
