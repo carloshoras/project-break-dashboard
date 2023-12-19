@@ -48,25 +48,24 @@ table {
 }
 /*---*/
 body {
-    background-size: 100%;
+    background-size: cover;
     transition: all 2s ease;
-    height: 100vh;
     background-repeat: no-repeat;
 }
 
-main {
+.sideIndex {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 620px;
 }
 button:hover {
     cursor: pointer;
 }
 header {
     padding-left: 10px;
-    padding-top:10px;
+    padding-top: 10px;
 }
 header a {
     text-decoration: none;
@@ -88,13 +87,39 @@ header a img {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    height: 90vh;
     padding: 40px;
     gap: 50px;
+    max-height: 680px;
+    /* border: 1px solid red; */
 }
+@media screen and (max-width: 900px) {
+    .mainIndex {
+        max-height: 2000px;
+    }
+    .watch {
+        order: 1;
+    }
+    .meteo {
+        order:2;
+    }
+    .links {
+        order: 3;
+    }
+    .generatorPasswordsSection {
+        order: 4;
+    }
+}
+/* footer {
+    border: 1px solid red;
+} */
 footer img {
     filter: brightness(0) invert(1);
     width: 30px;
+}
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
 }
 footer ul {
     display: flex;
@@ -103,11 +128,6 @@ footer ul {
     width: 50%;
     border-bottom: 1px solid white;
     padding-bottom: 3px;
-}
-footer nav {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 30px;
 }
 
 /*METEO*/
