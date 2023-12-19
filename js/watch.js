@@ -1,7 +1,6 @@
 const watch = document.querySelector(".watch")
-// const nameFileHtml = location.pathname.split("/")[1] // We get the html attached to the execution of the script
-const nameFileHtml = location.pathname
-console.log(nameFileHtml)
+const nameFileHtml = location.pathname.split("/") // We get the html attached to the execution of the script
+if (nameFileHtml[nameFileHtml.length-1] == '' || nameFileHtml[nameFileHtml.length-1] == 'index.html') console.log(nameFileHtml)
 
 function sentenceHour(hour) {
     if (hour>0 && hour<7) return "Es hora de descansar. Apaga y sigue mañana"
