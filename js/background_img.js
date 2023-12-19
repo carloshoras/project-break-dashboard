@@ -1,19 +1,19 @@
 document.body.style.backgroundImage = "url('./assets/img/bridge.jpg')";
 
 const backgroundImages = [
-    "/assets/img/bridge.jpg",
-    "/assets/img/canon.jpg",
-    "/assets/img/desert.jpg",
-    "/assets/img/eclipse.jpg",
-    "/assets/img/forrest-fog.jpg",
-    "/assets/img/forrest.jpg",
-    "/assets/img/forrest2.jpg",
-    "/assets/img/antler.jpg",
-    "/assets/img/mountain-sky.jpg",
-    "/assets/img/mountains.jpg",
-    "/assets/img/space-sky.jpg",
-    "/assets/img/octopus.jpg",
-    "/assets/img/snow.jpg"
+    "./assets/img/bridge.jpg",
+    "./assets/img/canon.jpg",
+    "./assets/img/desert.jpg",
+    "./assets/img/eclipse.jpg",
+    "./assets/img/forrest-fog.jpg",
+    "./assets/img/forrest.jpg",
+    "./assets/img/forrest2.jpg",
+    "./assets/img/antler.jpg",
+    "./assets/img/mountain-sky.jpg",
+    "./assets/img/mountains.jpg",
+    "./assets/img/space-sky.jpg",
+    "./assets/img/octopus.jpg",
+    "./assets/img/snow.jpg"
     ]
 
 let copybackgroundImages = [...backgroundImages]
