@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <title>Document</title>
 </head>
 <body>
     <header>
-        <a href="../index.html"><span>go home</span></a>
+        <a href="/index.html">
+            <img src="/assets/img/cohete.png"/>
+            <span>GO HOME</span>
+        </a>
     </header>
     <main>
         <section class="links">
-            <h2>Añade tu enlace de interés</h2>
+            <h2>Añade tu enlace de interés 🔗</h2>
             <div class="inputLink">
                 <input class="nameUrl" type="text" placeholder="Nombre de tu enlace"/>
                 <input class="url" type="text" placeholder="Pega aquí la URL"/>
@@ -20,6 +24,33 @@
             <div class="savedLinks"></div>
         </section>
     </main>
-    <script src="../js/bookmark.js"></script>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/html_widgets/watch.html">
+                        <img src="/assets/img/reloj.png" alt="Watch Widget"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html_widgets/pwdGenerator.html">
+                        <img src="/assets/img/candado.png" alt="Password"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html_widgets/meteo.html">
+                        <img src="/assets/img/nube.png" alt="Links" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/html_widgets/bookmark.html">
+                        <img src="/assets/img/enlace.png" alt="Meteo" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="/js/bookmark.js"></script>
+    <script src="/js/background_img.js"></script>
 </body>
 </html>

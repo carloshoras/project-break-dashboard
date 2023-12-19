@@ -7,40 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="watch"></section>
-    <section class="generatorPasswordsSection">
-        <h2>Crea tu contraseña segura 🔒</h2>
-        <div class="generatorPasswords">
-            <p>Numero de caracteres de la contraseña:</p>
-            <div class="inputPassword">
-                <input type="number" value="12" min="12" max="50"/>
-                <button>Generar Contraseña</button>
+    <main class="mainIndex">
+        <section class="links">
+            <h2>Añade tu enlace de interés 🔗</h2>
+            <div class="inputLink">
+                <input class="nameUrl" type="text" placeholder="Nombre de tu enlace"/>
+                <input class="url" type="text" placeholder="Pega aquí la URL"/>
+                <button>Añadir enlace</button>
             </div>
-            <div class="generatedPassword">
+            <div class="savedLinks"></div>
+        </section>
+        <section class="watch"></section>
+        <section class="meteo">
+            <div class="cityAndMeteo"></div>
+            <div class="completeInfo"></div>
+            <div class="forecastDay"></div>
+        </section>
+        <section class="generatorPasswordsSection">
+            <h2>Crea tu contraseña segura 🔒</h2>
+            <div class="generatorPasswords">
+                <p>Numero de caracteres de la contraseña:</p>
+                <div class="inputPassword">
+                    <input type="number" value="12" min="12" max="50"/>
+                    <button>Generar Contraseña</button>
+                </div>
+                <div class="generatedPassword">
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="links">
-        <h2>Añade tu enlace de interés</h2>
-        <div class="inputLink">
-            <input class="nameUrl" type="text" placeholder="Nombre de tu enlace"/>
-            <input class="url" type="text" placeholder="Pega aquí la URL"/>
-            <button>Añadir enlace</button>
-        </div>
-        <div class="savedLinks"></div>
-    </section>
-    <section class="meteo">
-        <div class="cityAndMeteo"></div>
-        <div class="completeInfo"></div>
-        <div class="forecastDay"></div>
-    </section>
+        </section>
+    </main>
     <footer>
         <nav>
             <ul>
-                <li><a href="/html_widgets/watch.html">Watch</a></li>
-                <li><a href="/html_widgets/pwdGenerator.html">Password Generator</a></li>
-                <li><a href="/html_widgets/meteo.html">Meteo</a></li>
-                <li><a href="/html_widgets/bookmark.html">Bookmark</a></li>
+                <li>
+                    <a href="/html_widgets/watch.html">
+                        <img src="/assets/img/reloj.png" alt="Watch Widget"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html_widgets/pwdGenerator.html">
+                        <img src="/assets/img/candado.png" alt="Password"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html_widgets/meteo.html">
+                        <img src="/assets/img/nube.png" alt="Links" />
+                    </a>
+                </li>
+                <li>
+                    <a href="/html_widgets/bookmark.html">
+                        <img src="/assets/img/enlace.png" alt="Meteo" />
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>
