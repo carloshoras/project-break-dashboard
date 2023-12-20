@@ -18,7 +18,7 @@ const backgroundImages = [
 
 let copybackgroundImages = [...backgroundImages]
 
-//Change the bg image and don't repeat the same until all have appeared
+//Change the bg image and don't repeat the same one until all have appeared
 function changeImgBackground() {
     if (copybackgroundImages.length === 0) {
         copybackgroundImages = [...backgroundImages]

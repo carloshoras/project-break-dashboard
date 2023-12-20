@@ -47,10 +47,45 @@ table {
     box-sizing: border-box;
 }
 /*---*/
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(252, 252, 252, 0.44);
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #212121c1;
+    border-radius: 10px;
+    border: 1px solid rgba(224, 222, 222, 0.179);
+  }
 body {
     background-size: cover;
     transition: all 3s ease;
     background-repeat: no-repeat;
+}
+.preloadImages {
+    position: relative;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    background-image: url("./assets/img/bridge.webp");
+    background-image: url("./assets/img/canon.webp");
+    background-image: url("./assets/img/desert.webp");
+    background-image: url("./assets/img/eclipse.webp");
+    background-image: url("./assets/img/forrest-fog.webp");
+    background-image: url("./assets/img/forrest.webp");
+    background-image: url("./assets/img/forrest2.webp");
+    background-image: url("./assets/img/antler.webp");
+    background-image: url("./assets/img/mountain-sky.webp");
+    background-image: url("./assets/img/mountains.webp");
+    background-image: url("./assets/img/space-sky.webp");
+    background-image: url("./assets/img/octopus.webp");
+    background-image: url("./assets/img/snow.webp");
 }
 
 .sideIndex {
