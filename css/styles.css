@@ -47,18 +47,34 @@ table {
     box-sizing: border-box;
 }
 /*---*/
-  *::-webkit-scrollbar {
+  .forecastDay::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     padding: 10px;
   }
 
-  *::-webkit-scrollbar-track {
+  .forecastDay::-webkit-scrollbar-track {
     background: rgba(252, 252, 252, 0.44);
     border-radius: 10px;
   }
 
-  *::-webkit-scrollbar-thumb {
+  .forecastDay::-webkit-scrollbar-thumb {
+    background-color: #212121c1;
+    border-radius: 10px;
+    border: 1px solid rgba(224, 222, 222, 0.179);
+  }
+  .savedLinks::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+  }
+
+  .savedLinks::-webkit-scrollbar-track {
+    background: rgba(252, 252, 252, 0.44);
+    border-radius: 10px;
+  }
+
+  .savedLinks::-webkit-scrollbar-thumb {
     background-color: #212121c1;
     border-radius: 10px;
     border: 1px solid rgba(224, 222, 222, 0.179);
