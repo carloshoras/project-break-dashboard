@@ -49,7 +49,7 @@ table {
 /*---*/
 body {
     background-size: cover;
-    transition: all 2s ease;
+    transition: all 3s ease;
     background-repeat: no-repeat;
 }
 
@@ -59,6 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 620px;
+    border: 1px solid red;
 }
 button:hover {
     cursor: pointer;
@@ -66,6 +67,7 @@ button:hover {
 header {
     padding-left: 10px;
     padding-top: 10px;
+    border: 1px solid red;
 }
 header a {
     text-decoration: none;
@@ -87,14 +89,21 @@ header a img {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 40px;
     gap: 20px;
     max-height: 90vh;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+footer {
+    border: 1px solid red;
+    margin-top: 20px;
+
 }
 @media screen and (max-width: 900px) {
     .mainIndex {
         max-height: 2000px;
+        gap: 40px;
     }
     .watch {
         order: 1;
@@ -109,9 +118,7 @@ header a img {
         order: 4;
     }
 }
-/* footer {
-    border: 1px solid red;
-} */
+
 footer img {
     filter: brightness(0) invert(1);
     width: 30px;
@@ -181,7 +188,9 @@ footer ul {
     display: flex;
     gap: 5px;
     padding: 5px;
-    overflow: scroll;
+    /* overflow: scroll; */
+    overflow-y: hidden;
+    overflow-x: scroll;
 
 }
 .forecastDay div {
@@ -245,7 +254,7 @@ footer ul {
     justify-content:flex-start;
     align-items:flex-start;
     font-family: "Poppins";
-    width: 320px;
+    width: 350px;
     color: white;
     gap: 10px;
     font-size: 20px;
@@ -291,7 +300,9 @@ footer ul {
     font-size: 11px;
 }
 
-
+.generatedPassword {
+    width: 100%;
+}
 .generatedPassword p:first-child {
     font-weight: 700;
     font-size: 17px;
@@ -302,8 +313,8 @@ footer ul {
     color: #ffe5c1;
     margin-left: 6px;
     margin-right: 6px;
-    overflow: hidden;
     overflow-wrap: break-word;
+    width: 100%;
 }
 
 /*BOOKMARK*/
