@@ -1,5 +1,4 @@
 document.body.style.backgroundImage = "url('./assets/img/bridge.webp')";
-
 const backgroundImages = [
     "./assets/img/bridge.webp",
     "./assets/img/canon.webp",
@@ -14,7 +13,12 @@ const backgroundImages = [
     "./assets/img/space-sky.webp",
     "./assets/img/octopus.webp",
     "./assets/img/snow.webp"
-    ]
+]
+// Ghost element to preload all images and not get white flashes when changing
+const preloadImages = document.querySelector('div.preloadImages')
+for (let i=0;i<13;i++) {
+    preloadImages.innerHTML += `<div><img src="${backgroundImages[i]}"/></div>`
+}
 
 let copybackgroundImages = [...backgroundImages]
 
@@ -31,3 +35,4 @@ function changeImgBackground() {
 
 changeImgBackground()
 setInterval(changeImgBackground, 15000)
+

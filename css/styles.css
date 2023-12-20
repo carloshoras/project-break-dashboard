@@ -68,11 +68,11 @@ body {
     transition: all 3s ease;
     background-repeat: no-repeat;
 }
-.preloadImages {
-    position: relative;
+.preloadImages img{
+    position: absolute;
     height: 0px;
     width: 0px;
-    background-image: url("../assets/img/bridge.webp");
+    /* background-image: url("../assets/img/bridge.webp");
     background-image: url("../assets/img/canon.webp");
     background-image: url("../assets/img/desert.webp");
     background-image: url("../assets/img/eclipse.webp");
@@ -84,7 +84,7 @@ body {
     background-image: url("../assets/img/mountains.webp");
     background-image: url("../assets/img/space-sky.webp");
     background-image: url("../assets/img/octopus.webp");
-    background-image: url("../assets/img/snow.webp");
+    background-image: url("../assets/img/snow.webp"); */
 }
 
 .sideIndex {
