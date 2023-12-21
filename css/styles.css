@@ -253,7 +253,7 @@ footer ul {
     min-width: 300px;
     max-width: 380px;
     max-height: 170px;
-    padding: 19px 3px;
+    padding: 19px 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.44); 
     display: flex;
