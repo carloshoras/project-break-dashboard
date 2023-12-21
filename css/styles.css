@@ -127,7 +127,7 @@ header a img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     gap: 20px;
     height: 90vh;
 }
@@ -137,7 +137,7 @@ footer {
 }
 @media screen and (max-width: 850px) {
     .mainIndex {
-        height: 1300px;
+        height: 1500px;
         gap: 40px;
     }
     .watch {
@@ -364,6 +364,9 @@ footer ul {
     gap: 10px;
     font-size: 20px;
     font-weight: 400;
+}
+.links.index {
+    margin: 30px 0;
 }
 .inputLink {
     display:flex;

@@ -45,6 +45,8 @@ buttonAddUrl.addEventListener('click', function () {
     } else if (nameUrl.value === "" || url.value === "") {
         alert("Uno de los campos está vacío")
     } else {
+        // If it doesn't start with 'https://', add it
+        url.value = url.value.startsWith("https://") ? url.value : "https://" + url.value
         links[nameUrl.value] = url.value
         localStorage.setItem("links", JSON.stringify(links))
         paintLinks()
