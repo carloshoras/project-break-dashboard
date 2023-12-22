@@ -128,35 +128,15 @@ header a img {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    gap: 20px;
+    gap: 20px 150px ;
     height: 90vh;
+    align-content: center;
 }
 footer {
     margin-top: 20px;
 
 }
-.links.index {
-    height: 100%;
-}
-@media screen and (max-width: 850px) {
-    .mainIndex {
-        height: 1500px;
-        gap: 40px;
-    }
-    .watch {
-        order: 1;
-    }
-    .meteo {
-        order:2;
-    }
-    .links {
-        order: 3;
-        height: auto;
-    }
-    .generatorPasswordsSection {
-        order: 4;
-    }
-}
+
 
 footer img {
     filter: brightness(0) invert(1);
@@ -365,7 +345,6 @@ footer ul {
     font-family: "Poppins";
     width: 400px;
     color: white;
-    /* margin: 40px 0; */
     gap: 10px;
     font-size: 20px;
     font-weight: 400;
@@ -441,4 +420,30 @@ footer ul {
     color: white;
     font-family: "Poppins";
     font-size: 13px;
+}
+
+.links.index {
+    height: 100%;
+    margin: 50% 0;
+}
+@media screen and (max-width: 950px) {
+    .mainIndex {
+        height: 1500px;
+        gap: 40px;
+    }
+    .watch {
+        order: 1;
+    }
+    .meteo {
+        order:2;
+    }
+    .links.index {
+        order: 3;
+        height: 570px;
+        margin: 0 0 20px 0;
+
+    }
+    .generatorPasswordsSection {
+        order: 4;
+    }
 }
