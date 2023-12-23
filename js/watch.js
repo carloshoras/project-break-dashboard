@@ -1,5 +1,6 @@
 const watch = document.querySelector(".watch")
-let nameFileHtml = location.pathname.split("/") // We get the html attached to the execution of the script
+// We get the name of the html attached to the execution of the script
+let nameFileHtml = location.pathname.split("/") 
 nameFileHtml = nameFileHtml[nameFileHtml.length-1]
 
 function sentenceHour(hour) {

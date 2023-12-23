@@ -14,7 +14,7 @@ const backgroundImages = [
     "./assets/img/octopus.webp",
     "./assets/img/snow.webp"
 ]
-// Ghost element to preload all images and not get white flashes when changing
+// Ghost element to preload all images and not get white flashes when switching
 const preloadImages = document.querySelector('div.preloadImages')
 for (let i=0;i<13;i++) {
     preloadImages.innerHTML += `<div><img src="${backgroundImages[i]}"/></div>`

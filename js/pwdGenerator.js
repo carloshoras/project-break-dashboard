@@ -22,7 +22,7 @@ buttonPassword.addEventListener('click', function () {
             for (let i=0;i<inputPassword.value;i++) {
                 characterType = Math.floor(Math.random() * 4)
                 characterIndex = Math.floor(Math.random()*characters[characterType].length)
-                password += characters[characterType][characterIndex] // Update the password
+                password += characters[characterType][characterIndex] // Build the password
                 checkOneOfEach[characterType] = 1 // We add one property to the object for each type added into the password.
             }
             //If the object 'checkOneOfEach' doesn't have 4 positions (one per type), repeat the process.
